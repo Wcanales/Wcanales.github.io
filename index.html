@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio académico personal de William A. Canales Verdugo. Apuntes, recursos docentes e investigación en estadística y matemáticas.">
+  <title>William A. Canales Verdugo | Docencia e Investigación</title>
+  <style>
+    :root { --ink:#15283b; --muted:#526476; --navy:#112e45; --teal:#007e82; --light:#f5f8fa; --line:#dae4ea; --white:#fff; --accent:#e5f5f2; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--light); line-height:1.6; }
+    a { color:inherit; } .wrap { width:min(1100px,calc(100% - 42px)); margin:auto; }
+    .top { background:var(--white); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+    .nav { min-height:72px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { text-decoration:none; font-weight:800; font-size:1.03rem; letter-spacing:-.02em; } .brand span { color:var(--teal); }
+    .links { display:flex; flex-wrap:wrap; gap:19px; } .links a { font-size:.88rem; font-weight:650; text-decoration:none; color:#354a5c; } .links a:hover { color:var(--teal); }
+    .hero { background:linear-gradient(122deg,#112e45 0%,#164b5b 58%,#08787d 100%); color:white; padding:85px 0 92px; overflow:hidden; }
+    .eyebrow { font-size:.76rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:#a9f0e6; margin:0 0 17px; }
+    h1 { font-size:clamp(2.2rem,5vw,4.1rem); line-height:1.13; letter-spacing:-.045em; margin:0 0 23px; max-width:850px; }
+    .lead { font-size:1.12rem; max-width:680px; color:#d9ebf0; margin:0 0 29px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; } .btn { padding:12px 19px; display:inline-block; border-radius:10px; font-weight:750; text-decoration:none; font-size:.94rem; }
+    .btn.primary { background:#fff; color:#153b50; } .btn.secondary { color:white; border:1px solid #a1c5ce; }
+    main section { padding:65px 0 20px; scroll-margin-top:75px; } h2 { font-size:clamp(1.7rem,3vw,2.35rem); letter-spacing:-.035em; margin:0 0 10px; }
+    .section-intro { max-width:740px; color:var(--muted); margin:0 0 29px; }
+    .about { display:grid; grid-template-columns:1.5fr 1fr; gap:22px; }
+    .panel { background:white; border:1px solid var(--line); border-radius:16px; padding:28px; box-shadow:0 6px 24px #102d4210; }
+    .panel p { margin:0 0 14px; } .panel p:last-child { margin-bottom:0; }
+    .side h3 { margin:0 0 13px; } .taglist { display:flex; flex-wrap:wrap; gap:8px; } .tag { font-size:.82rem; padding:6px 10px; background:#eaf2f4; border-radius:50px; font-weight:650; color:#315467; }
+    .controls { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px; } input[type=search], select { border:1px solid #bfcfd8; background:white; padding:12px 14px; border-radius:10px; color:var(--ink); font:inherit; }
+    input[type=search] { flex:1 1 270px; } select { flex:0 1 220px; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; } .card { background:white; border:1px solid var(--line); border-radius:15px; padding:23px; display:flex; flex-direction:column; min-height:225px; }
+    .card .category { color:var(--teal); font-size:.76rem; font-weight:850; letter-spacing:.06em; text-transform:uppercase; }
+    .card h3 { margin:12px 0 9px; font-size:1.2rem; line-height:1.3; } .card p { color:var(--muted); font-size:.93rem; margin:0 0 20px; }
+    .status { margin-top:auto; font-size:.84rem; color:#4d6676; background:#f0f5f6; padding:8px 11px; border-radius:8px; width:max-content; }
+    .research { background:var(--accent); border:1px solid #bfe3dd; border-radius:17px; padding:30px; }
+    .research h3 { margin:0 0 9px; font-size:1.3rem; } .research p { margin:0; max-width:850px; }
+    .notice { margin-top:18px; color:#546778; font-size:.88rem; }
+    footer { margin-top:65px; background:#112e45; color:#d9e8ed; padding:31px 0; font-size:.88rem; }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+    @media(max-width:760px) { .nav { padding:15px 0; flex-direction:column; align-items:flex-start; } .links { gap:13px; } .hero { padding:60px 0; } .about,.cards { grid-template-columns:1fr; } main section { padding-top:47px; } }
+  </style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="#inicio">W. A. <span>Canales Verdugo</span></a><nav class="links" aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a href="#biblioteca">Biblioteca</a><a href="#investigacion">Investigación</a><a href="#contacto">Contacto</a></nav></div></header>
+<div class="hero" id="inicio"><div class="wrap"><p class="eyebrow">Docencia · Estadística · Matemáticas</p><h1>Conocimiento que se comparte, aprendizaje que transforma.</h1><p class="lead">Un espacio académico para reunir apuntes, materiales docentes y recursos de Estadística, Bioestadística, Cálculo y Matemáticas.</p><div class="actions"><a class="btn primary" href="#biblioteca">Explorar biblioteca</a><a class="btn secondary" href="#investigacion">Líneas de investigación</a></div></div></div>
+<main>
+<section id="sobre-mi"><div class="wrap"><h2>Sobre mí</h2><p class="section-intro">Presentación académica y áreas de trabajo.</p><div class="about"><div class="panel"><p><strong>William A. Canales Verdugo</strong></p><p>Docente universitario y estudiante de doctorado en Estadística. Mi trabajo se vincula con la enseñanza de la Estadística y las Matemáticas, la elaboración de materiales de apoyo y la investigación estadística.</p><p>Este sitio nace con el propósito de organizar y compartir recursos que contribuyan al aprendizaje autónomo y al trabajo en el aula.</p></div><div class="panel side"><h3>Áreas de interés</h3><div class="taglist"><span class="tag">Estadística</span><span class="tag">Bioestadística</span><span class="tag">Cálculo</span><span class="tag">Matemáticas</span><span class="tag">Valores extremos</span><span class="tag">R y LaTeX</span></div></div></div></div></section>
+<section id="biblioteca"><div class="wrap"><h2>Biblioteca de apuntes</h2><p class="section-intro">Organizada por asignaturas. Esta primera versión contiene categorías de ejemplo; aquí incorporaremos tus archivos PDF y materiales definitivos.</p><div class="controls"><input id="search" type="search" placeholder="Buscar por tema o asignatura…" aria-label="Buscar recursos"><select id="filter" aria-label="Filtrar por área"><option value="todas">Todas las áreas</option><option value="Estadística">Estadística</option><option value="Bioestadística">Bioestadística</option><option value="Cálculo">Cálculo</option><option value="Matemáticas">Matemáticas</option></select></div><div class="cards" id="cards">
+<article class="card" data-category="Estadística"><span class="category">Estadística</span><h3>Estadística descriptiva</h3><p>Tablas de frecuencia, gráficos, medidas de tendencia central y dispersión.</p><span class="status">PDF por incorporar</span></article>
+<article class="card" data-category="Estadística"><span class="category">Estadística</span><h3>Probabilidad e inferencia</h3><p>Variables aleatorias, distribuciones, estimación y fundamentos de inferencia.</p><span class="status">PDF por incorporar</span></article>
+<article class="card" data-category="Bioestadística"><span class="category">Bioestadística</span><h3>Bioestadística aplicada</h3><p>Recursos para el análisis de datos en áreas de salud y nutrición.</p><span class="status">PDF por incorporar</span></article>
+<article class="card" data-category="Cálculo"><span class="category">Cálculo</span><h3>Cálculo diferencial e integral</h3><p>Funciones, límites, derivadas, optimización e integración.</p><span class="status">PDF por incorporar</span></article>
+<article class="card" data-category="Matemáticas"><span class="category">Matemáticas</span><h3>Álgebra y funciones</h3><p>Ecuaciones, inecuaciones y modelos de funciones.</p><span class="status">PDF por incorporar</span></article>
+<article class="card" data-category="Estadística"><span class="category">Estadística</span><h3>Regresión y análisis de datos</h3><p>Correlación, regresión lineal, análisis de residuos y herramientas en R.</p><span class="status">PDF por incorporar</span></article>
+</div><p class="notice" id="empty" hidden>No hay recursos que coincidan con la búsqueda.</p></div></section>
+<section id="investigacion"><div class="wrap"><h2>Investigación</h2><p class="section-intro">Un espacio para compartir avances, publicaciones y materiales de investigación cuando estén listos para difusión.</p><div class="research"><h3>Estadística de valores extremos</h3><p>Interés en métodos de estimación del índice de cola, comportamiento de valores extremos y enfoques de muestreo estadístico. Próximamente se incorporarán publicaciones y recursos de investigación autorizados para difusión.</p></div></div></section>
+<section id="contacto"><div class="wrap"><h2>Contacto</h2><div class="panel"><p>Para consultas académicas, colaboración o acceso a materiales, aquí podremos publicar un correo de contacto profesional cuando decidas cuál utilizar.</p><p class="notice">No se ha publicado ninguna dirección de correo personal en esta versión inicial.</p></div></div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="year"></span> William A. Canales Verdugo</span><span>Docencia e investigación · Sitio académico personal</span></div></footer>
+<script>
+ const search=document.querySelector('#search'), filter=document.querySelector('#filter');
+ function update(){ const q=search.value.toLocaleLowerCase('es').trim(), category=filter.value; let visible=0; document.querySelectorAll('.card').forEach(card=>{const match=(category==='todas'||card.dataset.category===category)&&card.textContent.toLocaleLowerCase('es').includes(q); card.hidden=!match; card.style.display=match?'flex':'none'; if(match)visible++;});document.querySelector('#empty').hidden=visible!==0;}
+ search.addEventListener('input',update); filter.addEventListener('change',update); document.querySelector('#year').textContent=new Date().getFullYear();
+</script>
+</body></html>
